@@ -27,6 +27,8 @@ public class LogController : ControllerBase
         } else if (statusCode > 500) {
             _logger.LogError(logMessage);
         }
+        System.Diagnostics.Trace.TraceWarning("System.Diagnostics.Trace a warning");
+        
 
         var response = new ObjectResult(logMessage)
         {

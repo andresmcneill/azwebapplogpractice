@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Logging.AzureAppServices;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,12 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.Configure<AzureBlobLoggerOptions>(options =>
+{
+    options.IsEnabled = true;
+    options.BlobName = "log.txt";
+});
 
 var app = builder.Build();
 
