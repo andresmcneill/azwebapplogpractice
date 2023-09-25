@@ -31,3 +31,5 @@
 /Users/andresmcneill/Code/Projects/personal/azwebapplogpractice/obj/Debug/net7.0/azwebapplogpractice.pdb
 /Users/andresmcneill/Code/Projects/personal/azwebapplogpractice/obj/Debug/net7.0/azwebapplogpractice.genruntimeconfig.cache
 /Users/andresmcneill/Code/Projects/personal/azwebapplogpractice/obj/Debug/net7.0/ref/azwebapplogpractice.dll
+/Users/andresmcneill/Code/Projects/personal/azwebapplogpractice/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/andresmcneill/Code/Projects/personal/azwebapplogpractice/bin/Debug/net7.0/Microsoft.Extensions.Logging.AzureAppServices.dll

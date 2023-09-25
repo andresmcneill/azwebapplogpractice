@@ -24,11 +24,11 @@ public class LogController : ControllerBase
             _logger.LogInformation(logMessage);
         } else if (statusCode == (int)HttpStatusCode.BadRequest) {
             _logger.LogWarning(logMessage);
-        } else if (statusCode > 500) {
+        } else if (statusCode >= 500) {
             _logger.LogError(logMessage);
         }
         System.Diagnostics.Trace.TraceWarning("System.Diagnostics.Trace a warning");
-        
+
 
         var response = new ObjectResult(logMessage)
         {
